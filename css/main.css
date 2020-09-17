@@ -1,6 +1,6 @@
 /* Color customization */
 :root {
-  --primary: #f9c412;
+  --primary: #0082ff;
   --primary-dark: #E7BF60;
 }
 
@@ -456,4 +456,9 @@ a {
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--primary);
+}
+
+body {
+  background: white;
+  color: #181818;
 }
