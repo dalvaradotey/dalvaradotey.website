@@ -227,3 +227,28 @@ document.body.addEventListener(
   },
   /* capture */ "true"
 );
+
+var profileImages = {
+  1: document.getElementById('profile-img-1'),
+  2: document.getElementById('profile-img-2'),
+  3: document.getElementById('profile-img-3'),
+}
+
+function slide(){
+  var ct = 1;
+
+  setInterval(function(){
+    profileImages[1].className = 'dn';
+    profileImages[2].className = 'dn';
+    profileImages[3].className = 'dn';
+    profileImages[ct].className = 'db';
+    
+    if (ct === 3) {
+      ct = 1;
+    } else {
+      ct += 1;
+    }
+  }, 4000) //2 seconds
+}
+
+slide();
